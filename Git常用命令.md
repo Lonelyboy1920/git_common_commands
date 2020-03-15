@@ -1,12 +1,12 @@
-#Git常用命令
-##仓库
+#	Git常用命令
+##	仓库
 * 1.在当前目录新建一个Git代码库  
 	>$ git init
 * 2.新建一个目录，将其初始化为Git代码库
 	> $ git init [project-name]
 * 3.下载一个项目和它的整个代码历史
 	>$ git clone [url]
-##配置
+##	配置
 * 显示当前的Git配置
 	>$ git config --list
 
@@ -17,7 +17,7 @@
 	>$ git config [--global] user.name "[name]"
 	
 	>$ git config [--global] user.email "[email address]"
-##增加/删除文件
+##	增加/删除文件
 * 添加指定文件到暂存区
 	>$ git add [file1] [file2] ...
 
@@ -39,7 +39,7 @@
 
 * 改名文件，并且将这个改名放入暂存区
 	>$ git mv [file-original] [file-renamed]
-##代码提交
+##	代码提交
 * 提交暂存区到仓库区
 	>$ git commit -m [message]
 
@@ -58,7 +58,7 @@
 
 * 重做上一次commit，并包括指定文件的新变化
 	>$ git commit --amend [file1] [file2] ...
-## 分支
+##	分支
 * 列出所有本地分支
 	>$ git branch
 
@@ -103,7 +103,7 @@
 	
 	>$ git branch -dr [remote/branch]
 
-##标签
+##	标签
 * 列出所有tag
 	>$ git tag
 
@@ -130,7 +130,7 @@
 
 * 新建一个分支，指向某个tag
 	>$ git checkout -b [branch] [tag]
-##查看信息
+##	查看信息
 * 显示有变更的文件
 	>$ git status
 
@@ -192,7 +192,7 @@
 
 * 显示当前分支的最近几次提交
 	>$ git reflog
-## 远程同步
+##	远程同步
 * 下载远程仓库的所有变动
 	>$ git fetch [remote]
 
@@ -216,7 +216,7 @@
 
 * 推送所有分支到远程仓库
 	>$ git push [remote] --all
-##撤销
+##	撤销
 * 恢复暂存区的指定文件到工作区
 	>$ git checkout [file]
 
@@ -250,6 +250,6 @@
 	
 	>$ git stash pop
 
-##其他
+##	其他
 * 生成一个可供发布的压缩包
 	>$ git archive
